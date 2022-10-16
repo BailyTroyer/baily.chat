@@ -1,0 +1,44 @@
+.container {
+  background-color: black;
+  height: 100vh;
+  color-scheme: dark;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.25em;
+  font-size: 16px;
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+  color: #4af626;
+  position: relative;
+}
+
+.messagesContainer {
+  margin: 0;
+  padding: 0.5em;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.inputContainer {
+  border-top: 1px solid #4af626;
+  padding: 0.5em;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.25em;
+}
+
+.input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}

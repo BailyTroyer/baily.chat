@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package messenger;
+
+service Messenger {
+  rpc Listen(ListenRequest) returns (stream Message);
+  rpc Chat(Message) returns (MessageResponse);
+}
+
+message Message {
+  string text = 1;
+}
+
+message ListenRequest {
+
+}
+
+message MessageRequest {
+  string text = 1;
+}
+
+message MessageResponse {
+  
+}
