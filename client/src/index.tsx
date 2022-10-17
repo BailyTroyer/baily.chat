@@ -15,7 +15,7 @@ import { Messages } from "./messages";
 import "./index.css";
 
 const httpLink = new HttpLink({
-  uri: "http://localhost:8000/",
+  uri: "http://44.202.103.102:8000/",
   headers: {
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
@@ -25,7 +25,7 @@ const httpLink = new HttpLink({
 
 const wsLink = new GraphQLWsLink(
   createClient({
-    url: "ws://localhost:8000/ws",
+    url: "ws://44.202.103.102:8000/ws",
   })
 );
 
